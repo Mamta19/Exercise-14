@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Assignment 12</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div id="content">
+
+        <form action="test.html" method="post">
+            <!--onsubmit ="return validate();">-->
+            <p> <label for="username">User Name<br></label>
+
+
+                <input type="text" id="firstName" name="username" placeholder="User Name" onblur="validate('firstName')"></p>
+            <p> <label for="emailaddress">Email Address<br></label>
+                <input type="text" id="email" name="email" placeholder="Email Address" onblur="ValidateEmail('email')"></p>
+            <p> <label for="password">Password<br></label>
+                <input type="password" id="password" name="password" placeholder="Password" onblur="validate('password')"></p>
+            <p> <label for="timezone"> Timezone<br></label>
+                <select id="myDropDown" onchange="validateSelect('myDropDown')">
+ <option value=""></option>   
+    <option value="1">Eastern</option>
+    <option value="2">Central</option>
+    <option value="3">Mountain</option>
+    <option value="4">Pacific</option>
+    </select></p>
+            <div>
+                <input id='checkbox' type='checkbox' name='checkbox' onchange="validateCheckBox('checkbox')">
+                <label for="checkbox">Accept Terms and Conditions</label>
+            </div>
+
+
+
+            <div class="controls">
+
+                <p><button type="button" button id="btnAddRed">Submit</button>
+                    <button type="button" button id="btnRemoveRed">Reset</button></p>
+            </div>
+    </div>
+    </form>
+
+
+    <section id="message">
+
+        <!--</section>
+        <section class="inputs">
+       </section>
+         <section class="control-panel">
+            <input type="button" value="Update Values" id="btnUpdate" />-->
+    </section>
+
+
+
+    <script src="scripts/main.js">
+    </script>
+
+
+</body>
+
+</html>
